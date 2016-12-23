@@ -70,7 +70,7 @@ html.embed,
 }
 .wufoo li,
 .noI .wufoo li{
-	width:100%;
+	width:100%!important;
 	box-sizing: border-box;
 	-webkit-column-break-inside: avoid; /* Chrome, Safari */
 	page-break-inside: avoid;           /* Theoretically FF 20+ */
@@ -115,6 +115,12 @@ html.embed,
 	text-align: center;
 	-webkit-column-span: all; /* Chrome, Safari, Opera */
 	column-span: all;
+}
+
+@media(max-width: 1199px){
+	.wufoo ul{
+		padding: 60px;
+	}
 }
 
 @media(max-width: 767px){
