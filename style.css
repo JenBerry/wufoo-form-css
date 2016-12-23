@@ -71,6 +71,10 @@ html.embed,
 .wufoo li{
 	width:100%;
 	box-sizing: border-box;
+	-webkit-column-break-inside: avoid; /* Chrome, Safari */
+	page-break-inside: avoid;           /* Theoretically FF 20+ */
+	break-inside: avoid-column;         /* IE 11 */
+	display:table;                      /* Actually FF 20+ */
 }
 .wufoo #fo3li4 li span,
 .wufoo #fo1li4 li span{
@@ -98,7 +102,7 @@ input[type="submit"]{
     color: #a7a5a6;
     width: 150px;
     min-width: 0;
-    margin: 0;
+    margin: 20px auto 60px;
     padding: 10px 0;
     text-transform: uppercase;
     border: none;
@@ -108,6 +112,8 @@ input[type="submit"]{
 
 .wufoo li.buttons{
 	text-align: center;
+	-webkit-column-span: all; /* Chrome, Safari, Opera */
+	column-span: all;
 }
 
 @media(max-width: 767px){
