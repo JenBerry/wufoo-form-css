@@ -77,8 +77,8 @@ html.embed,
 	break-inside: avoid-column;         /* IE 11 */
 	display:table;                      /* Actually FF 20+ */
 }
-.wufoo #fo3li4 li span,
-.wufoo #fo1li4 li span{
+.wufoo li#fo3li4 span,
+.wufoo li#fo1li4 span{
 	margin: 0;
 	width: 50%;
 	box-sizing: border-box;
