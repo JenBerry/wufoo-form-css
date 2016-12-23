@@ -61,13 +61,19 @@ html.embed,
 
 .wufoo ul{
 	padding: 60px 240px;
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	-moz-column-count: 2; /* Firefox */
+	column-count: 2;
+	-webkit-column-gap: 60px; /* Chrome, Safari, Opera */
+	-moz-column-gap: 60px; /* Firefox */
+	column-gap: 60px;
 }
 .wufoo li{
 	width:100%;
 	box-sizing: border-box;
 }
-#fo3li4 .wufoo li span,
-#fo1li4 .wufoo li span{
+.wufoo #fo3li4 li span,
+.wufoo #fo1li4 li span{
 	margin: 0;
 	width: 50%;
 	box-sizing: border-box;
@@ -111,5 +117,8 @@ input[type="submit"]{
 	}
 	.wufoo ul{
 		padding: 30px;
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+		-moz-column-count: 1; /* Firefox */
+		column-count: 1;
 	}
 }
