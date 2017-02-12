@@ -31,7 +31,7 @@ input[type="submit"],
 .wufoo li.focused label.desc,
 .confirm h2,
 .wufoo .info h2{
-	color: blue;
+	color: orange;
 	font-family: 'futura-pt';
 	letter-spacing: 1px;
 	font-size: 16px;
@@ -92,6 +92,11 @@ html.embed,
 .noI .wufoo li.buttons{
 	width:100%!important;
 	box-sizing: border-box;
+	-webkit-column-break-inside: avoid; /* Chrome, Safari */
+	page-break-inside: avoid;           /* Theoretically FF 20+ */
+	break-inside: avoid-column;         /* IE 11 */
+	display:table;                      /* Actually FF 20+ */
+	overflow: hidden;
 }
 .wufoo li#fo3li4 span,
 .wufoo li#fo1li4 span{
