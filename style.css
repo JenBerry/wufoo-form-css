@@ -31,7 +31,6 @@ input[type="submit"],
 .wufoo li.focused label.desc,
 .confirm h2,
 .wufoo .info h2{
-	color: red;
 	font-family: 'futura-pt';
 	letter-spacing: 1px;
 	font-size: 16px;
@@ -79,7 +78,7 @@ html.embed,
 
 .wufoo ul{
 	padding: 60px 240px;
-	-moz-column-count: 2; /* Firefox */
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
 	column-count: 2;
 	-webkit-column-gap: 60px; /* Chrome, Safari, Opera */
 	-moz-column-gap: 60px; /* Firefox */
