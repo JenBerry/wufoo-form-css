@@ -31,7 +31,7 @@ input[type="submit"],
 .wufoo li.focused label.desc,
 .confirm h2,
 .wufoo .info h2{
-	color: yellow;
+	color: blue;
 	font-family: 'futura-pt';
 	letter-spacing: 1px;
 	font-size: 16px;
@@ -79,10 +79,8 @@ html.embed,
 
 .wufoo ul{
 	padding: 60px 240px;
-	-webkit-column-count: 2; /* Chrome, Safari, Opera */
 	-moz-column-count: 2; /* Firefox */
 	column-count: 2;
-	-webkit-column-gap: 60px; /* Chrome, Safari, Opera */
 	-moz-column-gap: 60px; /* Firefox */
 	column-gap: 60px;
 }
@@ -92,7 +90,6 @@ html.embed,
 .noI .wufoo li.buttons{
 	width:100%!important;
 	box-sizing: border-box;
-	-webkit-column-break-inside: avoid; /* Chrome, Safari */
 	page-break-inside: avoid;           /* Theoretically FF 20+ */
 	break-inside: avoid-column;         /* IE 11 */
 	display:table;                      /* Actually FF 20+ */
@@ -133,7 +130,6 @@ html.embed,
 
 .wufoo li.buttons{
 	text-align: center;
-	-webkit-column-span: all; /* Chrome, Safari, Opera */
 	column-span: all;
 }
 
@@ -150,7 +146,6 @@ html.embed,
 	}
 	.wufoo ul{
 		padding: 30px;
-		-webkit-column-count: 1; /* Chrome, Safari, Opera */
 		-moz-column-count: 1; /* Firefox */
 		column-count: 1;
 	}
