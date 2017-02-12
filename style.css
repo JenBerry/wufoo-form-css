@@ -31,7 +31,6 @@ input[type="submit"],
 .wufoo li.focused label.desc,
 .confirm h2,
 .wufoo .info h2{
-	color: orange;
 	font-family: 'futura-pt';
 	letter-spacing: 1px;
 	font-size: 16px;
@@ -96,7 +95,6 @@ html.embed,
 	page-break-inside: avoid;           /* Theoretically FF 20+ */
 	break-inside: avoid-column;         /* IE 11 */
 	display:table;                      /* Actually FF 20+ */
-	overflow: hidden;
 }
 .wufoo li#fo3li4 span,
 .wufoo li#fo1li4 span{
@@ -133,9 +131,7 @@ html.embed,
 }
 
 .wufoo li.buttons{
-	text-align: center;
-	-webkit-column-span: all; /* Chrome, Safari, Opera */
-	column-span: all;
+	text-align: right;
 }
 
 @media(max-width: 1199px){
